@@ -1,0 +1,21 @@
+.btn {
+    background-color: #0070ba;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+    display: block; 
+}
+
+.mat-grid-tile {
+    border-style: ridge;
+}
+
+mat-grid-list{
+    padding-top: 50px;
+  }
+
+div span {
+    margin-right: 50px;
+    display: block; 
+}

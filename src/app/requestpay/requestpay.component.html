@@ -1,0 +1,11 @@
+<form #formRef="ngForm">
+    <div *ngFor="let word2 of words2; let in=index" class="col-sm-3">
+        <div class="form-group">
+          <input type="text" [(ngModel)]="words2[in].value" name="name{{in}}" placeholder="Enter Email" class="form-control" #name="ngModel" required />
+        </div>
+        <br />
+    </div>
+    <button [disabled]="!formRef.form.valid" (click)="add()">Add input</button>
+  </form>
+  <br />
+  <br />
