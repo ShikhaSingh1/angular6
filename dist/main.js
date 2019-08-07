@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main class=\"container\">\n    <cm-navbar></cm-navbar>\n    <router-outlet></router-outlet>\n    <cm-growler position=\"top-right\" timeout=\"2000\"></cm-growler>\n    <cm-modal></cm-modal>\n    <cm-overlay delay=\"300\">\n        <span class=\"spinner\"></span>&nbsp;&nbsp;&nbsp;Loading\n    </cm-overlay>\n</main>\n<br /><br />"
+module.exports = "<main class=\"container-fluid my-container\">\n    <cm-navbar></cm-navbar>\n    <router-outlet></router-outlet>\n    <cm-growler position=\"top-right\" timeout=\"2000\"></cm-growler>\n    <cm-modal></cm-modal>\n    <cm-overlay delay=\"300\">\n        <span class=\"spinner\"></span>&nbsp;&nbsp;&nbsp;Loading\n    </cm-overlay>\n</main>\n<br /><br />"
 
 /***/ }),
 
@@ -193,6 +193,17 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".my-container{\n    padding: 0px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubXktY29udGFpbmVye1xuICAgIHBhZGRpbmc6IDBweDtcbn0iXX0= */"
+
+/***/ }),
+
 /***/ "./src/app/app.component.ts":
 /*!**********************************!*\
   !*** ./src/app/app.component.ts ***!
@@ -212,7 +223,8 @@ let AppComponent = class AppComponent {
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'cm-app-component',
-        template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html")
+        template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
+        styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
     })
 ], AppComponent);
 
