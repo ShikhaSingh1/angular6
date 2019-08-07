@@ -1,3 +1,15 @@
 .navbar{
     background-image: linear-gradient(to right, #009cde, #003087);
 }
+.navbar-nav a{
+    color: white;
+    margin-left: 10px;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.navbar-nav{
+    margin-top: -15px;
+}

@@ -1,23 +1,49 @@
 <div class="container">
     <div>
       <!--<h2>My Groups</h2> -->
-    </div>
-    <mat-grid-list cols="2" rowHeight="2:1" [gutterSize]="'15px'">
-      <mat-grid-tile>
-        <div>
-            <span>Merchant Name</span>
-            <span id="mName">AirBnB</span>
-        </div>
-        <div>
-            <span>Amount</span>
-            <span id="amount">1000</span>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button (click)="split()" class="btn">Split Payment</button>
+      <br/>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="card text-center">
+                <div class="card-header">
+                  Cool Head
+          
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4"><p class="pull-right"> <b> Merchant Name </b></p></div>
+                    <div class="col-sm-4">
+                      <p class="pull-left"> AirBnB </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                      <p class="pull-right"> <b> Amount </b></p>
+                    </div>
+                    <div class="col-sm-4">
+                      <p class="pull-left"> 1000 </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-2"></div>
+                      <div class="col-sm-8">
+                          <button (click)="split()" class="btn btn-primary btn-block">Split Payment</button>
+                          
+                      </div>
+                    </div>
+                  
+                </div>
+                <!-- <div class="card-footer text-muted">
+                    2 days ago
+                  </div> -->
+              </div>
             </div>
         </div>
-      </mat-grid-tile>
-    </mat-grid-list>
-</div>
-  
+      </div>
+      
+    
+  </div>
+

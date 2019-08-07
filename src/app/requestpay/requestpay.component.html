@@ -1,11 +1,46 @@
-<form #formRef="ngForm">
-    <div *ngFor="let word2 of words2; let in=index" class="col-sm-3">
-        <div class="form-group">
-          <input type="text" [(ngModel)]="words2[in].value" name="name{{in}}" placeholder="Enter Email" class="form-control" #name="ngModel" required />
+<div class="container">
+    <div>
+      <!--<h2>My Groups</h2> -->
+      <br/>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="card text-center">
+                <div class="card-header">
+                  Cool Head
+          
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4"><input type="text" placeholder="Enter Email"></div>
+                    <div class="col-sm-4">
+                      <p class="pull-left"> <input type="number" placeholder="Enter Amount"> </p>
+                    </div>
+                    <div col-sm-2>
+                        <div class="btn-group" role="group" aria-label="Third group">
+                            <button type="button" class="btn btn-primary plus-button">+</button>
+                          </div>
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                      <div class="col-sm-2"></div>
+                      <div class="col-sm-8">
+                          <button (click)="split()" class="btn btn-primary btn-block">Split Payment</button>
+                          
+                      </div>
+                    </div>
+                  
+                </div>
+                <!-- <div class="card-footer text-muted">
+                    2 days ago
+                  </div> -->
+              </div>
+            </div>
         </div>
-        <br />
-    </div>
-    <button [disabled]="!formRef.form.valid" (click)="add()">Add input</button>
-  </form>
-  <br />
-  <br />
+      </div>
+      
+    
+  </div>
+

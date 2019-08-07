@@ -12,11 +12,11 @@ const app_routes: Routes = [
   { path: 'requestpay', data: { preload: true }, loadChildren: () => import('app/requestpay/requestpay.module').then(m => m.RequestpayModule) },
   { path: 'orders', data: { preload: true }, loadChildren: () => import('app/orders/orders.module').then(m => m.OrdersModule) },
   { path: 'about', loadChildren: () => import('app/about/about.module').then(m => m.AboutModule) },
-  { path: 'customers', loadChildren: () => import('app/customers/customers.module').then(m => m.CustomersModule ) },
+  { path: 'customers', loadChildren: () => import('app/customers/customers.module').then(m => m.CustomersModule) },
   { path: '**', pathMatch: 'full', redirectTo: '/login' } // catch any unfound routes and redirect to home page
 
   // NOTE: If you're using Angular 7 or lower you'll lazy loads routes the following way
-  
+
   // { path: 'customers/:id', data: { preload: true }, loadChildren: 'app/customer/customer.module#CustomerModule' },
   // { path: 'customers', loadChildren: 'app/customers/customers.module#CustomersModule' },
   // { path: 'orders', data: { preload: true }, loadChildren: 'app/orders/orders.module#OrdersModule' },
@@ -25,8 +25,8 @@ const app_routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(app_routes, { preloadingStrategy: PreloadModulesStrategy }) ],
-  exports: [ RouterModule ],
+  imports: [RouterModule.forRoot(app_routes, { preloadingStrategy: PreloadModulesStrategy })],
+  exports: [RouterModule],
   providers: [PreloadModulesStrategy]
 })
 export class AppRoutingModule { }
