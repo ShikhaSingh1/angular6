@@ -6,10 +6,13 @@ import { PreloadModulesStrategy } from './core/strategies/preload-modules.strate
 const app_routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/login' },
   { path: 'customers/:id', data: { preload: true }, loadChildren: () => import('app/customer/customer.module').then(m => m.CustomerModule) },
+  
   { path: 'login', loadChildren: () => import('app/login/login.module').then(m => m.LoginModule) },
   { path: 'groups', loadChildren: () => import('app/groups/groups.module').then(m => m.GroupsModule) },
   { path: 'mygroup', data: { preload: true }, loadChildren: () => import('app/mygroup/mygroup.module').then(m => m.MyGroupModule) },
   { path: 'requestpay', data: { preload: true }, loadChildren: () => import('app/requestpay/requestpay.module').then(m => m.RequestpayModule) },
+  { path: 'gpaystatus', data: { preload: true }, loadChildren: () => import('app/gpaystatus/gpaystatus.module').then(m => m.GpayStatusModule) },
+  
   { path: 'orders', data: { preload: true }, loadChildren: () => import('app/orders/orders.module').then(m => m.OrdersModule) },
   { path: 'about', loadChildren: () => import('app/about/about.module').then(m => m.AboutModule) },
   { path: 'customers', loadChildren: () => import('app/customers/customers.module').then(m => m.CustomersModule) },

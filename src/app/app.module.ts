@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { GroupsModule } from './groups/groups.module';
 import { MyGroupModule } from './mygroup/mygroup.module';
 import { RequestpayModule } from './requestpay/requestpay.module';
+import { GpayStatusModule } from './gpaystatus/gpaystatus.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { RequestpayModule } from './requestpay/requestpay.module';
     LoginModule, 
     GroupsModule,  
     MyGroupModule, 
-    RequestpayModule,      // Eager loaded since we may need to go here right away as browser loads based on route user enters
+    RequestpayModule,  
+    GpayStatusModule,    // Eager loaded since we may need to go here right away as browser loads based on route user enters
     AppRoutingModule,     // Main routes for application
     CoreModule,           // Singleton objects (services, components that are loaded only once, etc.)
     SharedModule          // Shared (multi-instance) objects

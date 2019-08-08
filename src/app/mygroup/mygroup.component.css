@@ -7,14 +7,6 @@
     display: block; 
 }
 
-.mat-grid-tile {
-    border-style: ridge;
-}
-
-mat-grid-list{
-    padding-top: 50px;
-  }
-
 div span {
     margin-right: 50px;
     display: block; 

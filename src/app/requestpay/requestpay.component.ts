@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'cm-requestpay',
@@ -6,15 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./requestpay.component.css']
 })
 export class RequestpayComponent implements OnInit {
-  words2 = [{value: 'name'}];
-  
-  constructor() { }
+  words2 = [{value: 'shikha@gmail.com', add: true}];
+  isButtonVisible:boolean = true;
+
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
  
-  add() {
-    this.words2.push({value: 'Enter Email'});
+  add(index : number) {
+    this.words2.push({value: '', add:true});
+    this.words2[index].add=false;
   }
 
+  split(){
+    this.router.navigate(["/gpaystatus"]);
+  }
 }
